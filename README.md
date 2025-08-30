@@ -1,16 +1,64 @@
-# news_app
+# Flutter News App
 
-A new Flutter project.
+## Overview
+This is a Flutter-based news application that fetches and displays news articles from a public API. Users can browse headlines, read detailed articles, and stay updated with the latest news.
+
+## Features
+- Display a list of top news headlines.
+- View detailed information for each news article.
+- Responsive UI.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK installed.
+- A code editor like VS Code or Android Studio.
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/flutter-news-app.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd flutter-news-app
+   ```
+3. Get dependencies:
+   ```bash
+   flutter pub get
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Running the App
+1. Connect a device or start an emulator.
+2. Run the app:
+   ```bash
+   flutter run
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+```
+lib/
+├── data/
+│   ├── api_service.dart         # Handles API calls
+│   ├── modals/
+│   │   └── news_model.dart      # Data model for news articles
+│   └── repositories/
+│       └── news_repo.dart       # Repository for news data
+├── screens/
+│   ├── news_detail_screen.dart  # Displays detailed news article
+│   └── news_screen.dart         # Displays list of news headlines
+├── styles/
+│   ├── app_theme.dart           # Defines application theme
+│   └── icons.dart               # Custom icons
+├── utils/
+│   └── constants.dart           # Application constants
+└── main.dart                    # Main entry point of the application
+```
+
+## Dependencies
+- `http`: For making network requests.
+- `provider`: For state management.
+- `cached_network_image`: For caching network images.
+- `intl`: For date formatting.
+
+(See `pubspec.yaml` for full list of dependencies)
