@@ -3,6 +3,11 @@
 ## Overview
 This is a Flutter-based news application that fetches and displays news articles from a public API. Users can browse headlines, read detailed articles, and stay updated with the latest news.
 
+## Secreenshots
+
+<img width="426" height="952" alt="Screenshot_1756580186" src="https://github.com/user-attachments/assets/f06a80a9-1f9d-4598-93fc-c621a035e88a" />
+<img width="426" height="952" alt="Screenshot_1756580194" src="https://github.com/user-attachments/assets/ce3fea3a-1227-46a8-aead-d90048692d77" />
+
 ## Features
 - Display a list of top news headlines.
 - View detailed information for each news article.
